@@ -8,6 +8,8 @@
 
 import UIKit
 
+import Photos
+
 class HomeViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
     @IBOutlet weak var imagePicked: UIImage!
@@ -25,6 +27,7 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
     }
     
     @IBAction func browsePhotos(_ sender: UIButton) {
+        self.checkPhotoLibraryPermission()
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
             let imagePicker = UIImagePickerController()
             imagePicker.delegate = self
@@ -36,18 +39,53 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
         }
     }
     
+    func checkPhotoLibraryPermission() {
+        let status = PHPhotoLibrary.authorizationStatus()
+        switch status {
+        case .authorized:
+            print("Authorized")
+            break
+        //handle authorized status
+        case .denied, .restricted :
+            print("Denied or Restricted")
+            break
+        //handle denied status
+        case .notDetermined:
+            print("Not Determined")
+            // ask for permissions
+            PHPhotoLibrary.requestAuthorization { status in
+                switch status {
+                case .authorized:
+                    print("2 Authorized")
+                    break
+                // as above
+                case .denied, .restricted:
+                    print("2 Denied or Restricted")
+                    break
+                // as above
+                case .notDetermined:
+                    print("2 not determined")
+                    break
+                    // won't happen but still
+                }
+            }
+        }
+    }
+
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any])
     {
         // Local variable inserted by Swift 4.2 migrator.
         if let image = info[.originalImage] as? UIImage {
-            
-            print("image found: \(image.size)")
+            imagePicked = image
+            print("image found: \(imagePicked.size)")
             //do something with an image
-            
+            dismiss(animated: true, completion: { self.setAdditionalParams() })
         } else {
             print("Not able to get an image")
+            dismiss(animated: true, completion: nil)
         }
-        dismiss(animated: true, completion: nil)
+        
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
@@ -69,6 +107,12 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
         let main = UIStoryboard(name: "Main", bundle: nil)
         let manual = main.instantiateViewController(withIdentifier: "ManualVC")
         self.present(manual, animated: true, completion: nil)
+    }
+    
+    private func setAdditionalParams() {
+        let main = UIStoryboard(name: "Main", bundle: nil)
+        let parameters = main.instantiateViewController(withIdentifier: "ParametersVC")
+        self.present(parameters, animated: true, completion: nil)
     }
     
 //    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
