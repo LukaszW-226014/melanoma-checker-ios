@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B73587D21B56B43000B3B47 /* ManualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B73587C21B56B43000B3B47 /* ManualViewController.swift */; };
+		2B73587F21B5812A000B3B47 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B73587E21B5812A000B3B47 /* UserViewController.swift */; };
 		2B8B7641219DFFC40082545B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B7640219DFFC40082545B /* AppDelegate.swift */; };
-		2B8B7643219DFFC40082545B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B7642219DFFC40082545B /* ViewController.swift */; };
-		2B8B7646219DFFC40082545B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B7644219DFFC40082545B /* Main.storyboard */; };
+		2B8B7643219DFFC40082545B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B7642219DFFC40082545B /* HomeViewController.swift */; };
 		2B8B7648219DFFC60082545B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B7647219DFFC60082545B /* Assets.xcassets */; };
 		2B8B764B219DFFC60082545B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B7649219DFFC60082545B /* LaunchScreen.storyboard */; };
 		2B8B7656219DFFC60082545B /* Melanoma_CheckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B7655219DFFC60082545B /* Melanoma_CheckerTests.swift */; };
 		2B8B7661219DFFC60082545B /* Melanoma_CheckerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B7660219DFFC60082545B /* Melanoma_CheckerUITests.swift */; };
+		2BEB42DA219E1C3000F6A41A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B7644219DFFC40082545B /* Main.storyboard */; };
+		2BF8A3EE21B514C90080CEDC /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF8A3ED21B514C90080CEDC /* StatisticsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B73587C21B56B43000B3B47 /* ManualViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualViewController.swift; sourceTree = "<group>"; };
+		2B73587E21B5812A000B3B47 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		2B8B763D219DFFC40082545B /* Melanoma Checker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Melanoma Checker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B8B7640219DFFC40082545B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2B8B7642219DFFC40082545B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2B8B7642219DFFC40082545B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2B8B7645219DFFC40082545B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B8B7647219DFFC60082545B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B8B764A219DFFC60082545B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +52,7 @@
 		2B8B765C219DFFC60082545B /* Melanoma CheckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Melanoma CheckerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B8B7660219DFFC60082545B /* Melanoma_CheckerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Melanoma_CheckerUITests.swift; sourceTree = "<group>"; };
 		2B8B7662219DFFC60082545B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BF8A3ED21B514C90080CEDC /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				2B8B7640219DFFC40082545B /* AppDelegate.swift */,
-				2B8B7642219DFFC40082545B /* ViewController.swift */,
+				2B8B7642219DFFC40082545B /* HomeViewController.swift */,
 				2B8B7644219DFFC40082545B /* Main.storyboard */,
 				2B8B7647219DFFC60082545B /* Assets.xcassets */,
 				2B8B7649219DFFC60082545B /* LaunchScreen.storyboard */,
 				2B8B764C219DFFC60082545B /* Info.plist */,
+				2BF8A3ED21B514C90080CEDC /* StatisticsViewController.swift */,
+				2B73587C21B56B43000B3B47 /* ManualViewController.swift */,
+				2B73587E21B5812A000B3B47 /* UserViewController.swift */,
 			);
 			path = "Melanoma Checker";
 			sourceTree = "<group>";
@@ -229,9 +238,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BEB42DA219E1C3000F6A41A /* Main.storyboard in Resources */,
 				2B8B764B219DFFC60082545B /* LaunchScreen.storyboard in Resources */,
 				2B8B7648219DFFC60082545B /* Assets.xcassets in Resources */,
-				2B8B7646219DFFC40082545B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B8B7643219DFFC40082545B /* ViewController.swift in Sources */,
+				2B8B7643219DFFC40082545B /* HomeViewController.swift in Sources */,
+				2B73587F21B5812A000B3B47 /* UserViewController.swift in Sources */,
 				2B8B7641219DFFC40082545B /* AppDelegate.swift in Sources */,
+				2B73587D21B56B43000B3B47 /* ManualViewController.swift in Sources */,
+				2BF8A3EE21B514C90080CEDC /* StatisticsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42V9FC7AF2;
 				INFOPLIST_FILE = "Melanoma Checker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42V9FC7AF2;
 				INFOPLIST_FILE = "Melanoma Checker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
