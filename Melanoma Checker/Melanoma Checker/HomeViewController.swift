@@ -16,8 +16,6 @@ import Alamofire
 
 class HomeViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
-    @IBOutlet weak var imagePicked: UIImage!
-    
     @IBAction func takePhoto(_ sender: UIButton) {
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
             let imagePicker = UIImagePickerController()
@@ -81,11 +79,8 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
     {
         // Local variable inserted by Swift 4.2 migrator.
         if let image = info[.originalImage] as? UIImage {
-            imagePicked = image
-            print("image found: \(imagePicked.size)")
             //do something with an image
-            dismiss(animated: true, completion: //{ self.setAdditionalParams() })
-                { self.uploadImage(image) })
+            dismiss(animated: true, completion: { self.goToParametersWith(image) })
         } else {
             print("Not able to get an image")
             dismiss(animated: true, completion: nil)
@@ -114,37 +109,17 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
         self.present(manual, animated: true, completion: nil)
     }
     
-    private func setAdditionalParams() {
+    private func goToParametersWith(_ image: UIImage) {
         let main = UIStoryboard(name: "Main", bundle: nil)
-        let parameters = main.instantiateViewController(withIdentifier: "ParametersVC")
+        let parameters = main.instantiateViewController(withIdentifier: "ParametersVC") as! ParametersViewController
+        parameters.pickedImage = image
         self.present(parameters, animated: true, completion: nil)
-    }
-    
-    func uploadImage(_ image: UIImage) {
-        
-        guard let imageData = //image.jpegData(compressionQuality: 0.5) else {
-                                image.pngData() else {
-            self.showAlertBy("Error", "Could not get PNG representation of UIImage")
-            return
-        }
-        
-        let base64: String! = imageData.base64EncodedString()
-        
-        let parameters:Parameters = ["image": base64, "diameter": "1", "evolution": "false"]
-        let headers = ["Content-Type":"application/json"]
-        Alamofire.request("http://172.20.10.4:8080/mobile/test1",method: .post, parameters: parameters, encoding: JSONEncoding.default,headers: headers)
-            .responseJSON { response in
-                print(response)
-                // Do anything you like with the response here
-                
-        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
-
 }
 
 @IBDesignable class RoundedButton: UIButton {
@@ -164,4 +139,3 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
         layer.cornerRadius = rounded ? frame.size.height / 2 : 0
     }
 }
-

@@ -11,6 +11,10 @@ import UIKit
 class ManualViewController: UIViewController {
 
     @IBAction func backToHome(_ sender: UIBarButtonItem) {
+        self.back()
+    }
+    
+    private func back() {
         let main = UIStoryboard(name: "Main", bundle: nil)
         let home = main.instantiateViewController(withIdentifier: "HomeVC")
         self.present(home, animated: true, completion: nil)
@@ -18,10 +22,20 @@ class ManualViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let edgePan = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(screenEdgeSwiped))
+        edgePan.edges = .left
+        
+        view.addGestureRecognizer(edgePan)
 
         // Do any additional setup after loading the view.
     }
     
+    @objc func screenEdgeSwiped(_ recognizer: UIScreenEdgePanGestureRecognizer) {
+        if recognizer.state == .recognized {
+            self.back()
+        }
+    }
 
     /*
     // MARK: - Navigation
