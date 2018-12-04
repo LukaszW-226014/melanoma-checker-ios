@@ -19,6 +19,9 @@
 		2B8B7661219DFFC60082545B /* Melanoma_CheckerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B7660219DFFC60082545B /* Melanoma_CheckerUITests.swift */; };
 		2BEB42DA219E1C3000F6A41A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B7644219DFFC40082545B /* Main.storyboard */; };
 		2BF8A3EE21B514C90080CEDC /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF8A3ED21B514C90080CEDC /* StatisticsViewController.swift */; };
+		6A76F55CEB13ECA2747ADBEE /* Pods_Melanoma_Checker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7450A51CBCF29C48A8EEB1 /* Pods_Melanoma_Checker.framework */; };
+		D5D1C917A109DF7078C1F707 /* Pods_Melanoma_CheckerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA96D434BD7475288F11A708 /* Pods_Melanoma_CheckerTests.framework */; };
+		DEC47A77967AD83DCFBD8C2E /* Pods_Melanoma_CheckerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 159AF664A43BB5B9F6001694 /* Pods_Melanoma_CheckerUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		159AF664A43BB5B9F6001694 /* Pods_Melanoma_CheckerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Melanoma_CheckerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19EFA954497C7AB15D861147 /* Pods-Melanoma Checker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Melanoma Checker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Melanoma Checker/Pods-Melanoma Checker.release.xcconfig"; sourceTree = "<group>"; };
 		2B73587C21B56B43000B3B47 /* ManualViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualViewController.swift; sourceTree = "<group>"; };
 		2B73587E21B5812A000B3B47 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		2B73588021B59C28000B3B47 /* ParametersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +62,13 @@
 		2B8B7660219DFFC60082545B /* Melanoma_CheckerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Melanoma_CheckerUITests.swift; sourceTree = "<group>"; };
 		2B8B7662219DFFC60082545B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BF8A3ED21B514C90080CEDC /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
+		4DE440181D7BC689C4936974 /* Pods-Melanoma CheckerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Melanoma CheckerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Melanoma CheckerUITests/Pods-Melanoma CheckerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5EE8BC4B6559EA50E122304C /* Pods-Melanoma CheckerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Melanoma CheckerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Melanoma CheckerTests/Pods-Melanoma CheckerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		64F11611717EE0FE9E822698 /* Pods-Melanoma CheckerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Melanoma CheckerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Melanoma CheckerUITests/Pods-Melanoma CheckerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6E8A2728D4ED446FFC7376C8 /* Pods-Melanoma CheckerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Melanoma CheckerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Melanoma CheckerTests/Pods-Melanoma CheckerTests.release.xcconfig"; sourceTree = "<group>"; };
+		7A810C66C5DD6A2B1E4C3A6C /* Pods-Melanoma Checker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Melanoma Checker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Melanoma Checker/Pods-Melanoma Checker.debug.xcconfig"; sourceTree = "<group>"; };
+		CA96D434BD7475288F11A708 /* Pods_Melanoma_CheckerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Melanoma_CheckerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB7450A51CBCF29C48A8EEB1 /* Pods_Melanoma_Checker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Melanoma_Checker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A76F55CEB13ECA2747ADBEE /* Pods_Melanoma_Checker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5D1C917A109DF7078C1F707 /* Pods_Melanoma_CheckerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +92,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEC47A77967AD83DCFBD8C2E /* Pods_Melanoma_CheckerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1306140D6B3FCBCBCC9EB799 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A810C66C5DD6A2B1E4C3A6C /* Pods-Melanoma Checker.debug.xcconfig */,
+				19EFA954497C7AB15D861147 /* Pods-Melanoma Checker.release.xcconfig */,
+				5EE8BC4B6559EA50E122304C /* Pods-Melanoma CheckerTests.debug.xcconfig */,
+				6E8A2728D4ED446FFC7376C8 /* Pods-Melanoma CheckerTests.release.xcconfig */,
+				64F11611717EE0FE9E822698 /* Pods-Melanoma CheckerUITests.debug.xcconfig */,
+				4DE440181D7BC689C4936974 /* Pods-Melanoma CheckerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2B8B7634219DFFC40082545B = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +119,8 @@
 				2B8B7654219DFFC60082545B /* Melanoma CheckerTests */,
 				2B8B765F219DFFC60082545B /* Melanoma CheckerUITests */,
 				2B8B763E219DFFC40082545B /* Products */,
+				1306140D6B3FCBCBCC9EB799 /* Pods */,
+				8FC2F3DE87CD1225CB48FBD7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +170,16 @@
 			path = "Melanoma CheckerUITests";
 			sourceTree = "<group>";
 		};
+		8FC2F3DE87CD1225CB48FBD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB7450A51CBCF29C48A8EEB1 /* Pods_Melanoma_Checker.framework */,
+				CA96D434BD7475288F11A708 /* Pods_Melanoma_CheckerTests.framework */,
+				159AF664A43BB5B9F6001694 /* Pods_Melanoma_CheckerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B8B7665219DFFC60082545B /* Build configuration list for PBXNativeTarget "Melanoma Checker" */;
 			buildPhases = (
+				86C30E72AA6ECDB3BD81E114 /* [CP] Check Pods Manifest.lock */,
 				2B8B7639219DFFC40082545B /* Sources */,
 				2B8B763A219DFFC40082545B /* Frameworks */,
 				2B8B763B219DFFC40082545B /* Resources */,
+				6B0CAD1727DF076C6B6DDAE1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -164,6 +206,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B8B7668219DFFC60082545B /* Build configuration list for PBXNativeTarget "Melanoma CheckerTests" */;
 			buildPhases = (
+				4A191E1624773A6DE222BE01 /* [CP] Check Pods Manifest.lock */,
 				2B8B764D219DFFC60082545B /* Sources */,
 				2B8B764E219DFFC60082545B /* Frameworks */,
 				2B8B764F219DFFC60082545B /* Resources */,
@@ -182,6 +225,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B8B766B219DFFC60082545B /* Build configuration list for PBXNativeTarget "Melanoma CheckerUITests" */;
 			buildPhases = (
+				1CE2E1CE0CF321DBD358C0DA /* [CP] Check Pods Manifest.lock */,
 				2B8B7658219DFFC60082545B /* Sources */,
 				2B8B7659219DFFC60082545B /* Frameworks */,
 				2B8B765A219DFFC60082545B /* Resources */,
@@ -265,6 +309,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CE2E1CE0CF321DBD358C0DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Melanoma CheckerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A191E1624773A6DE222BE01 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Melanoma CheckerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B0CAD1727DF076C6B6DDAE1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Melanoma Checker/Pods-Melanoma Checker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Melanoma Checker/Pods-Melanoma Checker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86C30E72AA6ECDB3BD81E114 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Melanoma Checker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2B8B7639219DFFC40082545B /* Sources */ = {
@@ -450,16 +587,17 @@
 		};
 		2B8B7666219DFFC60082545B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A810C66C5DD6A2B1E4C3A6C /* Pods-Melanoma Checker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 42V9FC7AF2;
+				DEVELOPMENT_TEAM = Q3D3G4AKQB;
 				INFOPLIST_FILE = "Melanoma Checker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wojcik.lukasz.Melanoma-Checker";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wojcik.lukasz.Melanoma-Checker-Mobile";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -468,16 +606,17 @@
 		};
 		2B8B7667219DFFC60082545B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19EFA954497C7AB15D861147 /* Pods-Melanoma Checker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 42V9FC7AF2;
+				DEVELOPMENT_TEAM = Q3D3G4AKQB;
 				INFOPLIST_FILE = "Melanoma Checker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wojcik.lukasz.Melanoma-Checker";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wojcik.lukasz.Melanoma-Checker-Mobile";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -486,6 +625,7 @@
 		};
 		2B8B7669219DFFC60082545B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EE8BC4B6559EA50E122304C /* Pods-Melanoma CheckerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +646,7 @@
 		};
 		2B8B766A219DFFC60082545B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E8A2728D4ED446FFC7376C8 /* Pods-Melanoma CheckerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -526,6 +667,7 @@
 		};
 		2B8B766C219DFFC60082545B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64F11611717EE0FE9E822698 /* Pods-Melanoma CheckerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -545,6 +687,7 @@
 		};
 		2B8B766D219DFFC60082545B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DE440181D7BC689C4936974 /* Pods-Melanoma CheckerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -10,6 +10,10 @@ import UIKit
 
 import Photos
 
+import SwiftyJSON
+
+import Alamofire
+
 class HomeViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
     @IBOutlet weak var imagePicked: UIImage!
@@ -35,7 +39,7 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
             imagePicker.allowsEditing = true
             self.present(imagePicker, animated: true, completion: nil)
         } else {
-            self.showAlertBy("Error", "Photo library is not available")
+            self.showAlertBy("Error", "Photo library is not available!")
         }
     }
     
@@ -80,7 +84,8 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
             imagePicked = image
             print("image found: \(imagePicked.size)")
             //do something with an image
-            dismiss(animated: true, completion: { self.setAdditionalParams() })
+            dismiss(animated: true, completion: //{ self.setAdditionalParams() })
+                { self.uploadImage(image) })
         } else {
             print("Not able to get an image")
             dismiss(animated: true, completion: nil)
@@ -115,17 +120,25 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
         self.present(parameters, animated: true, completion: nil)
     }
     
-//    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-//        picker.dismiss(animated: true)
-//
-//        guard let image = info[.editedImage] as? UIImage else {
-//            print("No image found")
-//            return
-//        }
-//
-//        // print out the image size as a test
-//        print(image.size)
-//    }
+    func uploadImage(_ image: UIImage) {
+        
+        guard let imageData = //image.jpegData(compressionQuality: 0.5) else {
+                                image.pngData() else {
+            self.showAlertBy("Error", "Could not get PNG representation of UIImage")
+            return
+        }
+        
+        let base64: String! = imageData.base64EncodedString()
+        
+        let parameters:Parameters = ["image": base64, "diameter": "1", "evolution": "false"]
+        let headers = ["Content-Type":"application/json"]
+        Alamofire.request("http://172.20.10.4:8080/mobile/test1",method: .post, parameters: parameters, encoding: JSONEncoding.default,headers: headers)
+            .responseJSON { response in
+                print(response)
+                // Do anything you like with the response here
+                
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
