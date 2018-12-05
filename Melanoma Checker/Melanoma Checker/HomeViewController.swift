@@ -10,10 +10,6 @@ import UIKit
 
 import Photos
 
-import SwiftyJSON
-
-import Alamofire
-
 class HomeViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
     @IBAction func takePhoto(_ sender: UIButton) {
@@ -82,7 +78,7 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
             //do something with an image
             dismiss(animated: true, completion: { self.goToParametersWith(image) })
         } else {
-            print("Not able to get an image")
+            self.showAlertBy("Error", "Not able to get an image!")
             dismiss(animated: true, completion: nil)
         }
         
